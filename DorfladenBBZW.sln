@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DorfladenBBZW", "DorfladenBBZW\DorfladenBBZW.csproj", "{B150A2C2-B082-4477-BBDC-6F84BC21744B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B150A2C2-B082-4477-BBDC-6F84BC21744B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B150A2C2-B082-4477-BBDC-6F84BC21744B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B150A2C2-B082-4477-BBDC-6F84BC21744B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B150A2C2-B082-4477-BBDC-6F84BC21744B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4698DD3B-468E-484E-910E-EE9A3BAA7EFB}
+	EndGlobalSection
+EndGlobal
