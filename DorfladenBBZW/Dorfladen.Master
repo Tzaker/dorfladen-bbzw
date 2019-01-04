@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dorfladen.master.cs" Inherits="DorfladenBBZW.Dorfladen" %>
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Dorfladen BBZW</title>
+    <link rel="stylesheet" href="~/CSS/site.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <a href="/">
+        <img class="logo" alt="Dorfladen-BBZW" src="assets/img/logo.png"/>
+    </a>
+    <div class="navbar">
+    </div>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div>
+                <asp:ContentPlaceHolder ID="SiteContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer>
+                <p>&copy 2019 - BBZW </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

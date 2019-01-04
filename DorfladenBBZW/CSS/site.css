@@ -1,0 +1,65 @@
+﻿body {
+}
+
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 200px;
+}
+
+.logo {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+    width: 80%;
+}
+
+footer {
+    position: fixed;
+    padding-top: 100px;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), orange);
+}
+
+.overview-title {
+    color: orange;
+    margin-left: 0;
+}
+
+.overviewlist-img {
+    width: 300px;
+    margin-top: 40px;
+}
+.overviewlist-item {
+    text-decoration: none;
+    position: relative;
+}
+
+.overviewlist-itemname {
+    color: orange;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 70%;
+}
+
+.overviewlist-itemnewprice {
+    color: black;
+    position: absolute;
+    left: 46%;
+    top: 70%;
+}
+
+.overviewlist-itemogprice {
+    text-decoration: line-through;
+    color: red;
+    position: absolute;
+    left: 70%;
+    top: 70%;
+}

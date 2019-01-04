@@ -67,20 +67,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Overview.aspx" />
+    <Content Include="assets\img\appenzeller.jpg" />
+    <Content Include="assets\img\eier.jpg" />
+    <Content Include="assets\img\icedtea.jpg" />
+    <Content Include="assets\img\kalbsbratwuerste.jpg" />
+    <Content Include="assets\img\krustenkranz.jpg" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\nektarinen.jpg" />
+    <Content Include="assets\img\olivenoel.jpg" />
+    <Content Include="assets\img\senf.jpg" />
+    <Content Include="assets\img\tomaten.jpg" />
+    <Content Include="assets\img\vanille_glace.jpg" />
+    <Content Include="CSS\site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Overview.aspx.cs">
-      <DependentUpon>Overview.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Overview.aspx.designer.cs">
-      <DependentUpon>Overview.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dorfladen.Master.cs">
+      <DependentUpon>Dorfladen.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dorfladen.Master.designer.cs">
+      <DependentUpon>Dorfladen.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Formatters\DecimalExtensionMethods.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Persistency\FileContentReader.cs" />
+    <Compile Include="Persistency\ProductsPersistency.cs" />
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transformers\FileContentToItemsTransformer.cs" />
+    <Compile Include="Transformers\LineToProductTransformer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\products.csv" />
+    <Content Include="Dorfladen.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

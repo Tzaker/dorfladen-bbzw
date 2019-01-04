@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DorfladenBBZW
 {
-    public partial class Overview : System.Web.UI.Page
+    public partial class Dorfladen : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
