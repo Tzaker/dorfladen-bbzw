@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace DorfladenBBZW
 {
-    public partial class ProductDetails : System.Web.UI.Page
+    public partial class Details : System.Web.UI.Page
     {
         public Product prod { get; set; }
 
@@ -18,17 +18,20 @@ namespace DorfladenBBZW
             if (Page.IsPostBack)
                 return;
 
-            if (!string.IsNullOrEmpty(Request.QueryString["pId"]))
+            if (!string.IsNullOrEmpty(Request.QueryString["prodId"]))
             {
-                GetProduct(Request.QueryString["pId"]);
+                var p = new ProductsPersistency();
+                prod = p.GetById(Request.QueryString["prodId"]);
 
             }
+
+            DetailPicture.ImageUrl = "assets/img/" + prod.ImageName;
+
         }
 
-        public void GetProduct(string id)
+        protected void AddToBasket_Click(object sender, EventArgs e)
         {
-            var p = new ProductsPersistency();
-            prod = p.GetById(id);
+
         }
     }
 }
