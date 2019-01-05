@@ -15,23 +15,21 @@ namespace DorfladenBBZW
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack)
-                return;
 
             if (!string.IsNullOrEmpty(Request.QueryString["prodId"]))
             {
                 var p = new ProductsPersistency();
                 prod = p.GetById(Request.QueryString["prodId"]);
 
+                DetailPicture.ImageUrl = "assets/img/" + prod.ImageName;
             }
 
-            DetailPicture.ImageUrl = "assets/img/" + prod.ImageName;
 
         }
 
         protected void AddToBasket_Click(object sender, EventArgs e)
         {
-
+            this.Session.Add(prod.Id + DateTime.Now.ToString(), prod.Id);
         }
     }
 }

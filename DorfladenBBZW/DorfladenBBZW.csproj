@@ -78,12 +78,20 @@
     <Content Include="assets\img\senf.jpg" />
     <Content Include="assets\img\tomaten.jpg" />
     <Content Include="assets\img\vanille_glace.jpg" />
+    <Content Include="Basket.aspx" />
     <Content Include="CSS\site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Details.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basket.aspx.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basket.aspx.designer.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -14,6 +14,8 @@ namespace DorfladenBBZW
         protected void Page_Load(object sender, EventArgs e)
         {
             IEnumerable<Product> AllProducts = GetProducts();
+
+
                 
         }
 

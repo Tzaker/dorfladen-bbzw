@@ -82,4 +82,34 @@ footer {
     border: solid 2px;
     color: #F68624;
     background-color: #FFF;
+    text-decoration: none;
+}
+
+.basketicon {
+    width: 30px;
+    height: auto;
+    float: right;
+}
+
+.basketnavbar {
+    float: right;
+    background-color: #F68624;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.totallabel {
+    float: right;
+    font-weight: bold;
+}
+
+.titlerow-basket {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.table-basket {
+    width: 100%;
 }

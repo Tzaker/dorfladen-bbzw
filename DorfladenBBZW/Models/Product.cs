@@ -1,5 +1,8 @@
-﻿namespace DorfladenBBZW.Models
+﻿using System;
+
+namespace DorfladenBBZW.Models
 {
+    [Serializable]
     public class Product
     {
         public Product(

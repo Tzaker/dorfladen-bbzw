@@ -14,10 +14,14 @@
     <a href="/">
         <img class="logo" alt="Dorfladen-BBZW" src="assets/img/logo.png"/>
     </a>
-    <div class="navbar">
-    </div>
     <form id="form1" runat="server">
         <div class="container">
+        <div class="navbar">
+            <a href="Basket.aspx">
+                <div class="basketnavbar"><%= Session.Count %></div>
+                <img class="basketicon" src="assets/img/basket.png" />
+            </a>
+        </div>
             <div>
                 <asp:ContentPlaceHolder ID="SiteContent" runat="server">
                 </asp:ContentPlaceHolder>
