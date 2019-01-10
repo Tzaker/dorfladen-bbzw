@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="SiteContent" runat="server">
 
-    <asp:Image CssClass="floatleft" ID="DetailPicture" runat="server"/>
+    <asp:Image CssClass="floatleft detailpicture" ID="DetailPicture" runat="server"/>
 
     <h3 runat="server" class="DetailName"><%= prod.Name %></h3>
     <br />
